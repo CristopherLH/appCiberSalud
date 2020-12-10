@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C519BA32582024E0013E5CB /* TabBarMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C519BA22582024E0013E5CB /* TabBarMedicoViewController.swift */; };
+		4C6CA4B725808D7800B60348 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6CA4B625808D7800B60348 /* RegisterUserViewController.swift */; };
+		4C6CA4C32580B63900B60348 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CA4C02580B63700B60348 /* logo.png */; };
+		4C6CA4C42580B63900B60348 /* doctor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CA4C12580B63800B60348 /* doctor.jpg */; };
+		4C6CA4C52580B63900B60348 /* clinica.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CA4C22580B63800B60348 /* clinica.jpg */; };
 		4C89CEF725806E3C009C7E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89CEF625806E3C009C7E76 /* AppDelegate.swift */; };
 		4C89CEF925806E3C009C7E76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89CEF825806E3C009C7E76 /* ViewController.swift */; };
 		4C89CEFC25806E3C009C7E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C89CEFA25806E3C009C7E76 /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C519BA22582024E0013E5CB /* TabBarMedicoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMedicoViewController.swift; sourceTree = "<group>"; };
+		4C6CA4B625808D7800B60348 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		4C6CA4C02580B63700B60348 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		4C6CA4C12580B63800B60348 /* doctor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctor.jpg; sourceTree = "<group>"; };
+		4C6CA4C22580B63800B60348 /* clinica.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clinica.jpg; sourceTree = "<group>"; };
 		4C89CEF325806E3C009C7E76 /* appCiberSalud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appCiberSalud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C89CEF625806E3C009C7E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C89CEF825806E3C009C7E76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C6CA4B525808D3700B60348 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4C6CA4B625808D7800B60348 /* RegisterUserViewController.swift */,
+				4C519BA22582024E0013E5CB /* TabBarMedicoViewController.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		4C6CA4BF2580B5F700B60348 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				4C6CA4C22580B63800B60348 /* clinica.jpg */,
+				4C6CA4C12580B63800B60348 /* doctor.jpg */,
+				4C6CA4C02580B63700B60348 /* logo.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		4C89CEEA25806E3C009C7E76 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +83,8 @@
 		4C89CEF525806E3C009C7E76 /* appCiberSalud */ = {
 			isa = PBXGroup;
 			children = (
+				4C6CA4BF2580B5F700B60348 /* img */,
+				4C6CA4B525808D3700B60348 /* views */,
 				4C89CEF625806E3C009C7E76 /* AppDelegate.swift */,
 				4C89CEF825806E3C009C7E76 /* ViewController.swift */,
 				4C89CEFA25806E3C009C7E76 /* Main.storyboard */,
@@ -122,6 +153,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6CA4C42580B63900B60348 /* doctor.jpg in Resources */,
+				4C6CA4C52580B63900B60348 /* clinica.jpg in Resources */,
+				4C6CA4C32580B63900B60348 /* logo.png in Resources */,
 				4C89CF0125806E47009C7E76 /* LaunchScreen.storyboard in Resources */,
 				4C89CEFE25806E47009C7E76 /* Assets.xcassets in Resources */,
 				4C89CEFC25806E3C009C7E76 /* Main.storyboard in Resources */,
@@ -136,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C89CEF925806E3C009C7E76 /* ViewController.swift in Sources */,
+				4C6CA4B725808D7800B60348 /* RegisterUserViewController.swift in Sources */,
+				4C519BA32582024E0013E5CB /* TabBarMedicoViewController.swift in Sources */,
 				4C89CEF725806E3C009C7E76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
