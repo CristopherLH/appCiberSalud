@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class RegisterUserViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
@@ -55,6 +56,47 @@ class RegisterUserViewController: UIViewController, UIPickerViewDataSource, UIPi
         let usuario = Usuario(id: 0, email: txtEmail, password: txtPassword, estado: true, paciente: paciente, roles: [rol], create_at: "")
         
         print(usuario)
+        
+        let subparameter: [String: Any] = ["nombres": "\(txtName)","apellidos": "\(txtLastName)","celular": "\(txtPhone)","direccion": "\(txtAdrress)","documento": "\(txtNumberDocument)"]
+        let parameter: [String: Any] = ["email": "\(txtEmail)","password": "\(txtPassword)","paciente": "\(subparameter)"]
+        
+        
+        AF.request("https://cibersalud.herokuapp.com/api/usuario/paciente", method: .post, parameters: parameter, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+                switch response.result {
+                case .success(let data):
+                    print(data)
+                case .failure(let error):
+                    print(error)
+            }
+        }
+        
+        
+        /*{
+          "email": "string",
+          "password": "string",
+          "paciente": {
+            "nombres": "string",
+            "apellidos": "string",
+            "celular": "string",
+            "direccion": "string",
+            "foto": "string",
+            "documento": "string",
+            "fechaNacimiento": "2020-12-11T11:28:30.843Z",
+            "tipoDocumento": {
+              "id": 0,
+              "descripcion": "string"
+            }
+          },
+          "roles": [
+            {
+              "idRol": 0,
+              "authority": "string"
+            }
+          ],
+          "create_at": "2020-12-11T11:28:30.843Z"
+        }*/
         
     }
     
