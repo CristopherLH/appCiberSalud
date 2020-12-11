@@ -83,6 +83,7 @@
 		4C89CEF525806E3C009C7E76 /* appCiberSalud */ = {
 			isa = PBXGroup;
 			children = (
+				B7D0B0FC2583076D006FCEF4 /* model */,
 				4C6CA4BF2580B5F700B60348 /* img */,
 				4C6CA4B525808D3700B60348 /* views */,
 				4C89CEF625806E3C009C7E76 /* AppDelegate.swift */,
@@ -93,6 +94,13 @@
 				4C89CF0225806E47009C7E76 /* Info.plist */,
 			);
 			path = appCiberSalud;
+			sourceTree = "<group>";
+		};
+		B7D0B0FC2583076D006FCEF4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
