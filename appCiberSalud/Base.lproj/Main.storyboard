@@ -111,6 +111,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="CIBERSALUD" id="I2B-Q3-5TX"/>
                     <connections>
+                        <outlet property="txtContraseña" destination="cDE-Xs-nAb" id="nfz-pt-JUH"/>
+                        <outlet property="txtLogin" destination="43d-fk-mrW" id="bsf-O8-skJ"/>
                         <segue destination="4OE-FS-cTd" kind="show" identifier="goRegister" id="7B2-gK-f13"/>
                         <segue destination="8Rf-ZI-Emo" kind="show" identifier="goTabBarMain" id="3PW-Wg-Aze"/>
                     </connections>
@@ -302,6 +304,9 @@
                                         <rect key="frame" x="0.0" y="530" width="355" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="REGISTRAR"/>
+                                        <connections>
+                                            <action selector="btnRegistrar:" destination="4OE-FS-cTd" eventType="touchUpInside" id="IwB-yc-qGE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21672260309999999" green="0.46074503119999999" blue="0.64974619290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -466,7 +471,7 @@
         <!--Item-->
         <scene sceneID="h9K-wA-gpI">
             <objects>
-                <viewController id="Jrr-ag-49T" sceneMemberID="viewController">
+                <viewController id="Jrr-ag-49T" customClass="MedicoViewController" customModule="appCiberSalud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTm-9t-0q0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

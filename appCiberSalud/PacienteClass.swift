@@ -9,20 +9,20 @@
 import Foundation
 
 class PacienteClass {
-    let id: Int
+    let id: Int?
     let nombres: String
     let apellidos: String
     let celular: String
     let direccion: String
-    let foto: String
+    let foto: String?
     let documento: String
-    let fechaNacimiento: Date
-    let edad: Int
-    let peso: Decimal
-    let estatura: Decimal
+    let fechaNacimiento: String
+    let edad: Int?
+    let peso: Decimal?
+    let estatura: Decimal?
     let tipoDocumento: TipoDocumentoClass
     
-    init(id: Int, nombres: String, apellidos: String, celular: String, direccion: String, foto: String, documento: String, fechaNacimiento: Date, edad: Int, peso: Decimal, estatura: Decimal, tipoDocumento: TipoDocumentoClass){
+    init(id: Int, nombres: String, apellidos: String, celular: String, direccion: String, foto: String, documento: String, fechaNacimiento: String, edad: Int?, peso: Decimal?, estatura: Decimal?, tipoDocumento: TipoDocumentoClass){
         self.id = id
         self.nombres = nombres
         self.apellidos = apellidos

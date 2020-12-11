@@ -18,10 +18,10 @@ class MedicoClass {
     let foto: String
     let direccion: String
     let tipoDocumento: TipoDocumentoClass
-    let especialidades: EspecialidadClass[]
+    let especialidades: [EspecialidadClass]
     
     
-    init (nombres: String, apellidos: String, cmp: String, celular: String, documento: String, foto: String, direccion: String, tipoDocumento: TipoDocumentoClass, especialidades: EspecialidadClass[]) {
+    init (nombres: String, apellidos: String, cmp: String, celular: String, documento: String, foto: String, direccion: String, tipoDocumento: TipoDocumentoClass, especialidades: [EspecialidadClass]) {
         self.nombres = nombres
         self.apellidos = apellidos
         self.cmp = cmp

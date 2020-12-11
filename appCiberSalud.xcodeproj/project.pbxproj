@@ -26,6 +26,8 @@
 		B7D0B10C258315C7006FCEF4 /* ConsultorioClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B10B258315C7006FCEF4 /* ConsultorioClass.swift */; };
 		B7D0B10E258316F1006FCEF4 /* EstadoCitaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B10D258316F1006FCEF4 /* EstadoCitaClass.swift */; };
 		B7D0B1122583176F006FCEF4 /* CitaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B1112583176F006FCEF4 /* CitaClass.swift */; };
+		B7D0B1142583483B006FCEF4 /* MedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B1132583483B006FCEF4 /* MedicoViewController.swift */; };
+		B7D0B1162583495B006FCEF4 /* RolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B1152583495B006FCEF4 /* RolClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		B7D0B10B258315C7006FCEF4 /* ConsultorioClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultorioClass.swift; sourceTree = "<group>"; };
 		B7D0B10D258316F1006FCEF4 /* EstadoCitaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadoCitaClass.swift; sourceTree = "<group>"; };
 		B7D0B1112583176F006FCEF4 /* CitaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitaClass.swift; sourceTree = "<group>"; };
+		B7D0B1132583483B006FCEF4 /* MedicoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicoViewController.swift; sourceTree = "<group>"; };
+		B7D0B1152583495B006FCEF4 /* RolClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			children = (
 				4C6CA4B625808D7800B60348 /* RegisterUserViewController.swift */,
 				4C519BA22582024E0013E5CB /* TabBarMedicoViewController.swift */,
+				B7D0B1132583483B006FCEF4 /* MedicoViewController.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				B7D0B10B258315C7006FCEF4 /* ConsultorioClass.swift */,
 				B7D0B10D258316F1006FCEF4 /* EstadoCitaClass.swift */,
 				B7D0B1112583176F006FCEF4 /* CitaClass.swift */,
+				B7D0B1152583495B006FCEF4 /* RolClass.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -217,6 +223,8 @@
 				B7D0B10025830FAC006FCEF4 /* TipoDocumentoClass.swift in Sources */,
 				B7D0B102258311A7006FCEF4 /* UsuarioClass.swift in Sources */,
 				B7D0B10A25831553006FCEF4 /* HorarioClass.swift in Sources */,
+				B7D0B1162583495B006FCEF4 /* RolClass.swift in Sources */,
+				B7D0B1142583483B006FCEF4 /* MedicoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
