@@ -31,9 +31,6 @@ class RegisterUserViewController: UIViewController, UIPickerViewDataSource, UIPi
         pickerTipoDocumento.delegate = self
         txtTypeDocument.inputView = pickerTipoDocumento
         
-        /**/
-            // ya queda
-        
     }
 
 
@@ -44,11 +41,43 @@ class RegisterUserViewController: UIViewController, UIPickerViewDataSource, UIPi
             return
         }
         
-        guard let txtName = txtName.text , let txtLastName = txtLastName.text, let txtPhone = txtPhone.text, let txtAdrress = txtAdrress.text, let txtNumberDocument = txtNumberDocument.text, let txtEmail = txtEmail.text, let txtPassword = txtPassword.text else {
+        guard let txtName = txtName.text , let txtLastName = txtLastName.text, let txtPhone = txtPhone.text, let txtAdrress = txtAdrress.text, let txtNumberDocument = txtNumberDocument.text,
+            let txtDateBirth = txtDateBirth.text, let txtEmail = txtEmail.text, let txtPassword = txtPassword.text else {
             print("ERror")
             return
         }
-    
+        
+  
+        
+        /*
+         {
+             "email": "renatocastillo@gmail.com",
+             "password": "12345",
+             "roles": [
+                 {
+                     "idRol": "1"
+                 }
+             ],
+             "paciente": {
+                 "nombres": "Renato Alonso",
+                 "apellidos": "Castillo Pingo",
+                 "celular": "987654321",
+                 "correo": "renatocastillo@gmail.com",
+                 "direccion": "Av. Venezuela 1065",
+                 "documento": "12345678",
+                 "fechaNacimiento": "2020-08-12",
+                 "edad": 20,
+                 "peso": 65.5,
+                 "estatura": 1.58,
+                 "tipoDocumento": {
+                     "id": 1
+                 }
+             }
+         }
+            
+         */
+
+        
         let parameter: [String: Any] = [
             "email" : txtEmail,
             "password" : txtPassword,
@@ -72,31 +101,6 @@ class RegisterUserViewController: UIViewController, UIPickerViewDataSource, UIPi
                          print(error)
                        }
         }
-
-        /*{
-          "email": "string",
-          "password": "string",
-          "paciente": {
-            "nombres": "string",
-            "apellidos": "string",
-            "celular": "string",
-            "direccion": "string",
-            "foto": "string",
-            "documento": "string",
-            "fechaNacimiento": "2020-12-11T11:28:30.843Z",
-            "tipoDocumento": {
-              "id": 0,
-              "descripcion": "string"
-            }
-          },
-          "roles": [
-            {
-              "idRol": 0,
-              "authority": "string"
-            }
-          ],
-          "create_at": "2020-12-11T11:28:30.843Z"
-        }*/
         
     }
     
