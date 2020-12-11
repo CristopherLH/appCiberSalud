@@ -15,6 +15,7 @@ class MedicoViewController: UIViewController{
     @IBOutlet weak var tblMedicos: UITableView!
     
     var medico = [MedicoClass]()
+    let decoder = JSONDecoder()
     
     
     override func viewDidLoad() {
@@ -22,14 +23,25 @@ class MedicoViewController: UIViewController{
         typealias jsonObject = [String : Any]
         typealias jsonArray =  [jsonObject]
         
-        let url = "​https://cibersalud.herokuapp.com/api​/medico"
         
-        AF.request(url).responseJSON{
+        
+        /* AF.request("​https://cibersalud.herokuapp.com/api/medico").responseJSON{
             (response) in
                 print(response)
-        }
+        } */
+        
+        AF.request("https://cibersalud.herokuapp.com/api/medico", method: .get, parameters: nil, encoding: JSONEncoding.default)
+        .responseJSON { response in
+            switch response.result {
+            case .success(let data):
+                DispatchQueue.main.async {
+                    }
+            case .failure(let error):
+                print(error)
+            }
         
     }
     
+    }
     
 }

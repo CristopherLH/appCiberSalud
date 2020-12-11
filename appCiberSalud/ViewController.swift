@@ -38,7 +38,8 @@ class ViewController: UIViewController {
         let parameter: [String: Any] = ["email": "\(usuario)",
         "password": "\(clave)"]
         
-
+        self.performSegue(withIdentifier: "goTabBarMain", sender: nil)
+/*
         AF.request("https://cibersalud.herokuapp.com/api/usuario/login/paciente", method: .post, parameters: parameter, encoding: JSONEncoding.default)
             .responseJSON { response in
                 print(response)
@@ -49,14 +50,11 @@ class ViewController: UIViewController {
                 case .failure(let error):
                     print(error)
                 }
-            }
+            }*/
         
         
         
-        /*
-        AF.request("https://cibersalud.herokuapp.com/api/medico").responseJSON{
-            (response) in print(response)
-        }*/
+    
         
     }
 }

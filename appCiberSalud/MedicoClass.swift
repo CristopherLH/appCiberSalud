@@ -31,6 +31,6 @@ class MedicoClass {
         self.direccion = direccion
         self.tipoDocumento = tipoDocumento
         self.especialidades = especialidades
-
     }
+    
 }
