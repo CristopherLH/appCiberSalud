@@ -9,12 +9,13 @@
 import UIKit
 import Alamofire
 
-class MedicoViewController: UIViewController{
+class MedicoViewController: UIViewController,UITableViewDataSource{
+    
  
     
     @IBOutlet weak var tblMedicos: UITableView!
     
-    var medico = [MedicoClass]()
+    var medicos = [MedicoClass]()
     let decoder = JSONDecoder()
     
     
@@ -34,13 +35,35 @@ class MedicoViewController: UIViewController{
         .responseJSON { response in
             switch response.result {
             case .success(let data):
-                data
+                let response = data as! NSArray
+                for med in response {
+                    let medico = med as! NSDictionary
+                    let nombre = medico["nombres"] as? String ?? ""
+                    let apellid = medico["apellidos"] as? String ?? ""
+                    let cmp = medico["cmp"] as? String ?? ""
+                    let medicoN = MedicoClass(nombres: nombre, apellidos: apellid, cmp: cmp, celular: "String", documento: "", foto: "", direccion: "")
+                    self.medicos.append(medicoN)
+                }
+                self.tblMedicos.reloadData()
+                self.tblMedicos.dataSource = self
             case .failure(let error):
                 print(error)
             }
         
         }
-    
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return medicos.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        /*let viewCell = tableView.dequeueReusableCell(withIdentifier: "cellDoctor", for: indexPath) as! CellMedicos
+        let paisObtenido = self.viewCell[indexPath.row]
+        //LANDEO ESTAS?????
+        viewCell.txtNamePais.text = paisObtenido.nombrePais
+        viewCell.txtConfirmados.text = paisObtenido.casosConfirmados
+        viewCell.txtMuertos.text = paisObtenido.casosMuertos
+        viewCell.txtRecuperados.text = paisObtenido.casosRecuperados*/
+    }
 }

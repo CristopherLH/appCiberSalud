@@ -9,12 +9,12 @@
 import Foundation
 
 class PacienteClass {
-    let id: Int?
-    let nombres: String
-    let apellidos: String
+    var id: Int?
+    var nombres: String
+    var apellidos: String
     let celular: String
-    let direccion: String
-    let foto: String?
+    var direccion: String
+    var foto: String?
     let documento: String
     let fechaNacimiento: String
     let edad: Int?

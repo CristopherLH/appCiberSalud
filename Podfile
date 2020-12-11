@@ -6,7 +6,7 @@ target 'appCiberSalud' do
   use_frameworks!
 
   pod 'Alamofire', '~> 5.2'
-  pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'AlamofireObjectMapper', '~> 3.5'
 
   # Pods for appCiberSalud
 

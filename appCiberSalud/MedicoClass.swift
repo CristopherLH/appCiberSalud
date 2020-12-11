@@ -10,18 +10,16 @@ import Foundation
 
 class MedicoClass {
     
-    let nombres:String
-    let apellidos:String
-    let cmp:String
+    var nombres:String
+    var apellidos:String
+    var cmp:String
     let celular: String
     let documento: String
     let foto: String
     let direccion: String
-    let tipoDocumento: TipoDocumentoClass
-    let especialidades: [EspecialidadClass]
     
     
-    init (nombres: String, apellidos: String, cmp: String, celular: String, documento: String, foto: String, direccion: String, tipoDocumento: TipoDocumentoClass, especialidades: [EspecialidadClass]) {
+    init (nombres: String, apellidos: String, cmp: String, celular: String, documento: String, foto: String, direccion: String) {
         self.nombres = nombres
         self.apellidos = apellidos
         self.cmp = cmp
@@ -29,8 +27,6 @@ class MedicoClass {
         self.documento = documento
         self.foto = foto
         self.direccion = direccion
-        self.tipoDocumento = tipoDocumento
-        self.especialidades = especialidades
     }
     
 }

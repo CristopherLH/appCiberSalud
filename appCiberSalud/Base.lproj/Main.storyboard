@@ -496,7 +496,7 @@
                                         <color key="separatorColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tblDoctors" rowHeight="113" id="JCR-CN-KOK" customClass="CellMedicos" customModule="appCiberSalud" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellDoctor" rowHeight="113" id="JCR-CN-KOK" customClass="CellMedicos" customModule="appCiberSalud" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="355" height="113"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JCR-CN-KOK" id="w48-zJ-PhI">
