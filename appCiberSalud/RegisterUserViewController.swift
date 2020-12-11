@@ -32,7 +32,8 @@ class RegisterUserViewController: UIViewController, UIPickerViewDataSource, UIPi
         txtTypeDocument.inputView = pickerTipoDocumento
         
         /**/
-
+            // ya queda
+        
     }
 
 
@@ -43,36 +44,35 @@ class RegisterUserViewController: UIViewController, UIPickerViewDataSource, UIPi
             return
         }
         
-        guard let txtName = txtName.text , let txtLastName = txtLastName.text, let txtPhone = txtPhone.text, let txtAdrress = txtAdrress.text, let txtNumberDocument = txtNumberDocument.text,
-            let txtDateBirth = txtDateBirth.text, let txtEmail = txtEmail.text, let txtPassword = txtPassword.text else {
+        guard let txtName = txtName.text , let txtLastName = txtLastName.text, let txtPhone = txtPhone.text, let txtAdrress = txtAdrress.text, let txtNumberDocument = txtNumberDocument.text, let txtEmail = txtEmail.text, let txtPassword = txtPassword.text else {
             print("ERror")
             return
         }
+    
+        let parameter: [String: Any] = [
+            "email" : txtEmail,
+            "password" : txtPassword,
+            "paciente" :
+                [
+                    "nombres" : txtName,
+                    "apellidos": txtLastName,
+                    "celular" : txtPhone,
+                    "direccion": txtAdrress,
+                    "documento": txtNumberDocument
+                ],
+        ]
         
-        
-        let rol = RolClass(idRol: 2, authority: "")
-        let tipoDocumento = TipoDocumentoClass(id: 1, descripcion: "")
-        let paciente = PacienteClass(id: 0, nombres: txtName, apellidos: txtLastName, celular: txtPhone, direccion: txtAdrress, foto: "", documento:  txtNumberDocument, fechaNacimiento: txtDateBirth, edad: 0, peso: 0, estatura: 0, tipoDocumento: tipoDocumento)
-        let usuario = Usuario(id: 0, email: txtEmail, password: txtPassword, estado: true, paciente: paciente, roles: [rol], create_at: "")
-        
-        print(usuario)
-        
-        let subparameter: [String: Any] = ["nombres": "\(txtName)","apellidos": "\(txtLastName)","celular": "\(txtPhone)","direccion": "\(txtAdrress)","documento": "\(txtNumberDocument)"]
-        let parameter: [String: Any] = ["email": "\(txtEmail)","password": "\(txtPassword)","paciente": "\(subparameter)"]
-        
-        
-        AF.request("https://cibersalud.herokuapp.com/api/usuario/paciente", method: .post, parameters: parameter, encoding: JSONEncoding.default)
-            .responseJSON { response in
-                print(response)
-                switch response.result {
-                case .success(let data):
-                    print(data)
-                case .failure(let error):
-                    print(error)
-            }
+        AF.request("https://cibersalud.herokuapp.com/api/usuario/paciente", method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: nil)
+            .validate(statusCode: 200..<500)
+            .responseJSON {  response in
+                       switch response.result {
+                      case .success(let data):
+                         print(data)
+                       case .failure(let error):
+                         print(error)
+                       }
         }
-        
-        
+
         /*{
           "email": "string",
           "password": "string",
@@ -117,5 +117,6 @@ class RegisterUserViewController: UIViewController, UIPickerViewDataSource, UIPi
         txtTypeDocument.text = optTipo
     
     }
+  
 
 }

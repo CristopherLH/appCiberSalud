@@ -34,13 +34,12 @@ class MedicoViewController: UIViewController{
         .responseJSON { response in
             switch response.result {
             case .success(let data):
-                DispatchQueue.main.async {
-                    }
+                data
             case .failure(let error):
                 print(error)
             }
         
-    }
+        }
     
     }
     
