@@ -17,7 +17,7 @@ class CitaClass {
     let especialidad: EspecialidadClass
     
     init(id: Int, fechaReg: Date, paciente: PacienteClass, horario: HorarioClass, estadoCita: EstadoCitaClass, especialidad: EspecialidadClass){
-        self.id = id
+        self.id = id
         self.fechaReg = fechaReg
         self.paciente = paciente
         self.horario = horario
