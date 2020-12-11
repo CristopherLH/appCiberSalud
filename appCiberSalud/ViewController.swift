@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnLogin(_ sender: Any) {
-        /*performSegue(withIdentifier: "goTabBarMain", sender: nil)*/
+        
         guard let usuario = txtLogin.text else{
             print("usuario erronea")
             return
@@ -33,32 +34,30 @@ class ViewController: UIViewController {
             print("clave erronea")
             return
         }
+
+        let parameter: [String: Any] = ["email": "\(usuario)",
+        "password": "\(clave)"]
+        
+
+        AF.request("https://cibersalud.herokuapp.com/api/usuario/login/paciente", method: .post, parameters: parameter, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+                switch response.result {
+                case .success(let data):
+                    print(data)
+                    self.performSegue(withIdentifier: "goTabBarMain", sender: nil)
+                case .failure(let error):
+                    print(error)
+                }
+            }
         
         
         
-        let json: [String: Any] = ["email": "renatocastillo@gmail.com",
-                                  "password": "12345"]
+        /*
+        AF.request("https://cibersalud.herokuapp.com/api/medico").responseJSON{
+            (response) in print(response)
+        }*/
         
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-        
-        // create post request
-        let url = URL(string: "https://cibersalud.herokuapp.com/api/usuario/login/paciente")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        
-        // insert json data to the request
-        request.httpBody = jsonData
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-               guard let data = data, error == nil else {
-                   print(error?.localizedDescription ?? "No data")
-                   return
-               }
-               let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-               if let responseJSON = responseJSON as? [String: Any] {
-                   print(responseJSON)
-               }
-        }
     }
 }
 

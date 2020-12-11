@@ -480,7 +480,7 @@
                                 <rect key="frame" x="10" y="54" width="355" height="564"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="3tU-HL-QTQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="81"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOCTORES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJ7-Pl-H9V">
                                                 <rect key="frame" x="123" y="0.0" width="109" height="24"/>
@@ -488,24 +488,15 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SELECCIONE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVb-tT-bdG">
-                                                <rect key="frame" x="0.0" y="31" width="355" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="BVb-tT-bdG" firstAttribute="leading" secondItem="3tU-HL-QTQ" secondAttribute="leading" id="pfP-j9-ZuI"/>
-                                            <constraint firstAttribute="trailing" secondItem="BVb-tT-bdG" secondAttribute="trailing" id="x80-Ao-iV5"/>
-                                        </constraints>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nbd-tx-7lv">
-                                        <rect key="frame" x="0.0" y="100" width="355" height="464"/>
+                                        <rect key="frame" x="0.0" y="43" width="355" height="521"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tblDoctors" rowHeight="113" id="JCR-CN-KOK">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tblDoctors" rowHeight="113" id="JCR-CN-KOK" customClass="CellMedicos" customModule="appCiberSalud" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="355" height="113"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JCR-CN-KOK" id="w48-zJ-PhI">
@@ -579,6 +570,11 @@
                                                         <constraint firstItem="mFn-Fw-QaG" firstAttribute="leading" secondItem="w48-zJ-PhI" secondAttribute="leading" id="oGx-Rw-crg"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="lblApellidos" destination="SfX-he-fAo" id="c56-UH-ihr"/>
+                                                    <outlet property="lblCmp" destination="A3V-z4-rSv" id="khN-FQ-PxM"/>
+                                                    <outlet property="lblNombres" destination="CH1-6x-06r" id="C35-5u-gKq"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -595,6 +591,9 @@
                         <viewLayoutGuide key="safeArea" id="Kev-5e-4xT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="rhK-fn-mgn"/>
+                    <connections>
+                        <outlet property="tblMedicos" destination="nbd-tx-7lv" id="Pp1-6x-L6D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJp-t6-DSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

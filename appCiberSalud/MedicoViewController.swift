@@ -7,23 +7,29 @@
 //
 
 import UIKit
+import Alamofire
 
-class MedicoViewController: UIViewController {
-
+class MedicoViewController: UIViewController{
+ 
+    
+    @IBOutlet weak var tblMedicos: UITableView!
+    
+    var medico = [MedicoClass]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        typealias jsonObject = [String : Any]
+        typealias jsonArray =  [jsonObject]
+        
+        let url = "​https://cibersalud.herokuapp.com/api​/medico"
+        
+        AF.request(url).responseJSON{
+            (response) in
+                print(response)
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

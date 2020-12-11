@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		4C89CEFC25806E3C009C7E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C89CEFA25806E3C009C7E76 /* Main.storyboard */; };
 		4C89CEFE25806E47009C7E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C89CEFD25806E47009C7E76 /* Assets.xcassets */; };
 		4C89CF0125806E47009C7E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C89CEFF25806E47009C7E76 /* LaunchScreen.storyboard */; };
+		9F1AD9DA970B89C297E41F4D /* Pods_appCiberSalud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DE173DF93A0E94729DA1F4 /* Pods_appCiberSalud.framework */; };
 		B7D0B0FE25830DDA006FCEF4 /* MedicoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B0FD25830DDA006FCEF4 /* MedicoClass.swift */; };
 		B7D0B10025830FAC006FCEF4 /* TipoDocumentoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B0FF25830FAC006FCEF4 /* TipoDocumentoClass.swift */; };
 		B7D0B102258311A7006FCEF4 /* UsuarioClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B101258311A7006FCEF4 /* UsuarioClass.swift */; };
@@ -28,6 +29,7 @@
 		B7D0B1122583176F006FCEF4 /* CitaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B1112583176F006FCEF4 /* CitaClass.swift */; };
 		B7D0B1142583483B006FCEF4 /* MedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B1132583483B006FCEF4 /* MedicoViewController.swift */; };
 		B7D0B1162583495B006FCEF4 /* RolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B1152583495B006FCEF4 /* RolClass.swift */; };
+		B7F6735E2583732000F8116E /* CellMedicos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6735D2583732000F8116E /* CellMedicos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		4C89CEFD25806E47009C7E76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C89CF0025806E47009C7E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C89CF0225806E47009C7E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DE173DF93A0E94729DA1F4 /* Pods_appCiberSalud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appCiberSalud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D0B0FD25830DDA006FCEF4 /* MedicoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicoClass.swift; sourceTree = "<group>"; };
 		B7D0B0FF25830FAC006FCEF4 /* TipoDocumentoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoDocumentoClass.swift; sourceTree = "<group>"; };
 		B7D0B101258311A7006FCEF4 /* UsuarioClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioClass.swift; sourceTree = "<group>"; };
@@ -54,6 +57,9 @@
 		B7D0B1112583176F006FCEF4 /* CitaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitaClass.swift; sourceTree = "<group>"; };
 		B7D0B1132583483B006FCEF4 /* MedicoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicoViewController.swift; sourceTree = "<group>"; };
 		B7D0B1152583495B006FCEF4 /* RolClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolClass.swift; sourceTree = "<group>"; };
+		B7F6735D2583732000F8116E /* CellMedicos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellMedicos.swift; sourceTree = "<group>"; };
+		CD3FB259ED00B8E2C0FF71E9 /* Pods-appCiberSalud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appCiberSalud.release.xcconfig"; path = "Target Support Files/Pods-appCiberSalud/Pods-appCiberSalud.release.xcconfig"; sourceTree = "<group>"; };
+		F1C3B96B133BD8198FB4F064 /* Pods-appCiberSalud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appCiberSalud.debug.xcconfig"; path = "Target Support Files/Pods-appCiberSalud/Pods-appCiberSalud.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,18 +67,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1AD9DA970B89C297E41F4D /* Pods_appCiberSalud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		232843E97B30B973D9173012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75DE173DF93A0E94729DA1F4 /* Pods_appCiberSalud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C6CA4B525808D3700B60348 /* views */ = {
 			isa = PBXGroup;
 			children = (
 				4C6CA4B625808D7800B60348 /* RegisterUserViewController.swift */,
 				4C519BA22582024E0013E5CB /* TabBarMedicoViewController.swift */,
 				B7D0B1132583483B006FCEF4 /* MedicoViewController.swift */,
+				B7F6735D2583732000F8116E /* CellMedicos.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -92,6 +108,8 @@
 			children = (
 				4C89CEF525806E3C009C7E76 /* appCiberSalud */,
 				4C89CEF425806E3C009C7E76 /* Products */,
+				F4F60A9BAEA907BDC33F0232 /* Pods */,
+				232843E97B30B973D9173012 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +154,15 @@
 			name = model;
 			sourceTree = "<group>";
 		};
+		F4F60A9BAEA907BDC33F0232 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1C3B96B133BD8198FB4F064 /* Pods-appCiberSalud.debug.xcconfig */,
+				CD3FB259ED00B8E2C0FF71E9 /* Pods-appCiberSalud.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C89CF0525806E48009C7E76 /* Build configuration list for PBXNativeTarget "appCiberSalud" */;
 			buildPhases = (
+				16C9ED60275320401D5A88E3 /* [CP] Check Pods Manifest.lock */,
 				4C89CEEF25806E3C009C7E76 /* Sources */,
 				4C89CEF025806E3C009C7E76 /* Frameworks */,
 				4C89CEF125806E3C009C7E76 /* Resources */,
+				140865B081BE3A776A183829 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,11 +234,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		140865B081BE3A776A183829 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-appCiberSalud/Pods-appCiberSalud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-appCiberSalud/Pods-appCiberSalud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-appCiberSalud/Pods-appCiberSalud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16C9ED60275320401D5A88E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-appCiberSalud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C89CEEF25806E3C009C7E76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F6735E2583732000F8116E /* CellMedicos.swift in Sources */,
 				B7D0B104258311C1006FCEF4 /* EspecialidadClass.swift in Sources */,
 				B7D0B10C258315C7006FCEF4 /* ConsultorioClass.swift in Sources */,
 				4C89CEF925806E3C009C7E76 /* ViewController.swift in Sources */,
@@ -368,6 +440,7 @@
 		};
 		4C89CF0625806E48009C7E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C3B96B133BD8198FB4F064 /* Pods-appCiberSalud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -385,6 +458,7 @@
 		};
 		4C89CF0725806E48009C7E76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD3FB259ED00B8E2C0FF71E9 /* Pods-appCiberSalud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
