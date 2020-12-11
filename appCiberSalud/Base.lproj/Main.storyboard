@@ -341,6 +341,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2tb-jk-eDl"/>
                     </scrollView>
+                    <connections>
+                        <outlet property="txtAdrress" destination="Epn-fI-lde" id="4gX-9L-Z5A"/>
+                        <outlet property="txtDateBirth" destination="dsf-fB-tZD" id="zVZ-zb-A05"/>
+                        <outlet property="txtEmail" destination="7HK-oC-IdU" id="AE6-MG-mH5"/>
+                        <outlet property="txtLastName" destination="ghx-k3-gLk" id="Kz3-bD-Dx6"/>
+                        <outlet property="txtName" destination="mUi-R0-RNe" id="LZV-e9-wEo"/>
+                        <outlet property="txtNumberDocument" destination="FeH-9Z-hRg" id="mk8-oy-f4r"/>
+                        <outlet property="txtPassword" destination="1Mj-6C-rGy" id="5yb-Z6-N7l"/>
+                        <outlet property="txtPhone" destination="vQt-OP-j8r" id="t2m-iU-Ap9"/>
+                        <outlet property="txtTypeDocument" destination="Tuk-1S-oeK" id="fyS-yG-C4O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfN-HR-SGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

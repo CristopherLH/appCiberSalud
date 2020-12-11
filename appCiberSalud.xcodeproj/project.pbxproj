@@ -17,6 +17,15 @@
 		4C89CEFC25806E3C009C7E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C89CEFA25806E3C009C7E76 /* Main.storyboard */; };
 		4C89CEFE25806E47009C7E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C89CEFD25806E47009C7E76 /* Assets.xcassets */; };
 		4C89CF0125806E47009C7E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C89CEFF25806E47009C7E76 /* LaunchScreen.storyboard */; };
+		B7D0B0FE25830DDA006FCEF4 /* MedicoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B0FD25830DDA006FCEF4 /* MedicoClass.swift */; };
+		B7D0B10025830FAC006FCEF4 /* TipoDocumentoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B0FF25830FAC006FCEF4 /* TipoDocumentoClass.swift */; };
+		B7D0B102258311A7006FCEF4 /* UsuarioClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B101258311A7006FCEF4 /* UsuarioClass.swift */; };
+		B7D0B104258311C1006FCEF4 /* EspecialidadClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B103258311C1006FCEF4 /* EspecialidadClass.swift */; };
+		B7D0B108258312EF006FCEF4 /* PacienteClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B107258312EF006FCEF4 /* PacienteClass.swift */; };
+		B7D0B10A25831553006FCEF4 /* HorarioClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B10925831553006FCEF4 /* HorarioClass.swift */; };
+		B7D0B10C258315C7006FCEF4 /* ConsultorioClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B10B258315C7006FCEF4 /* ConsultorioClass.swift */; };
+		B7D0B10E258316F1006FCEF4 /* EstadoCitaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B10D258316F1006FCEF4 /* EstadoCitaClass.swift */; };
+		B7D0B1122583176F006FCEF4 /* CitaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0B1112583176F006FCEF4 /* CitaClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +41,15 @@
 		4C89CEFD25806E47009C7E76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C89CF0025806E47009C7E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C89CF0225806E47009C7E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D0B0FD25830DDA006FCEF4 /* MedicoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicoClass.swift; sourceTree = "<group>"; };
+		B7D0B0FF25830FAC006FCEF4 /* TipoDocumentoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoDocumentoClass.swift; sourceTree = "<group>"; };
+		B7D0B101258311A7006FCEF4 /* UsuarioClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioClass.swift; sourceTree = "<group>"; };
+		B7D0B103258311C1006FCEF4 /* EspecialidadClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspecialidadClass.swift; sourceTree = "<group>"; };
+		B7D0B107258312EF006FCEF4 /* PacienteClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacienteClass.swift; sourceTree = "<group>"; };
+		B7D0B10925831553006FCEF4 /* HorarioClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioClass.swift; sourceTree = "<group>"; };
+		B7D0B10B258315C7006FCEF4 /* ConsultorioClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultorioClass.swift; sourceTree = "<group>"; };
+		B7D0B10D258316F1006FCEF4 /* EstadoCitaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadoCitaClass.swift; sourceTree = "<group>"; };
+		B7D0B1112583176F006FCEF4 /* CitaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitaClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,15 @@
 		B7D0B0FC2583076D006FCEF4 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B7D0B0FD25830DDA006FCEF4 /* MedicoClass.swift */,
+				B7D0B0FF25830FAC006FCEF4 /* TipoDocumentoClass.swift */,
+				B7D0B101258311A7006FCEF4 /* UsuarioClass.swift */,
+				B7D0B103258311C1006FCEF4 /* EspecialidadClass.swift */,
+				B7D0B107258312EF006FCEF4 /* PacienteClass.swift */,
+				B7D0B10925831553006FCEF4 /* HorarioClass.swift */,
+				B7D0B10B258315C7006FCEF4 /* ConsultorioClass.swift */,
+				B7D0B10D258316F1006FCEF4 /* EstadoCitaClass.swift */,
+				B7D0B1112583176F006FCEF4 /* CitaClass.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -177,10 +204,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D0B104258311C1006FCEF4 /* EspecialidadClass.swift in Sources */,
+				B7D0B10C258315C7006FCEF4 /* ConsultorioClass.swift in Sources */,
 				4C89CEF925806E3C009C7E76 /* ViewController.swift in Sources */,
+				B7D0B1122583176F006FCEF4 /* CitaClass.swift in Sources */,
+				B7D0B10E258316F1006FCEF4 /* EstadoCitaClass.swift in Sources */,
+				B7D0B0FE25830DDA006FCEF4 /* MedicoClass.swift in Sources */,
 				4C6CA4B725808D7800B60348 /* RegisterUserViewController.swift in Sources */,
 				4C519BA32582024E0013E5CB /* TabBarMedicoViewController.swift in Sources */,
+				B7D0B108258312EF006FCEF4 /* PacienteClass.swift in Sources */,
 				4C89CEF725806E3C009C7E76 /* AppDelegate.swift in Sources */,
+				B7D0B10025830FAC006FCEF4 /* TipoDocumentoClass.swift in Sources */,
+				B7D0B102258311A7006FCEF4 /* UsuarioClass.swift in Sources */,
+				B7D0B10A25831553006FCEF4 /* HorarioClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
